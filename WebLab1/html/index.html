@@ -17,7 +17,7 @@
             display: grid;
 
             grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: 100px 1.5fr 1.5fr 100px;
+            grid-template-rows: 100px 2.3fr 1.5fr 100px;
 
             gap: 15px;
 
@@ -55,6 +55,9 @@
         .graph-item svg {
             font-size: 15px;
             display: flex;
+            width: 50vw;
+            min-height: 40vh;
+            max-height: 60vh;
         }
 
         .graph-item svg line,
@@ -79,13 +82,17 @@
             font-size: 0.6em;
             justify-content: normal;
             align-items: normal;
+            overflow-y: scroll;
         }
 
         fieldset {
             border-color: #344648;
             border-radius: 0.2em;
-            min-height: 30vh;
+            min-height: 8vh;
             max-height: 50vh;
+            width: 28vw;
+            justify-content: center;
+            align-items: center;
             text-align: center;
         }
 
@@ -126,21 +133,34 @@
             cursor: pointer;
         }
 
-        .form-field input:focus {
-            outline: none;
+        input[placeholder] {
+           padding-left: 0.4em;
         }
 
-        .form-field.error input {
-            border-color: red;
+        .form-field  small {
+            font-size: 0.5em;
+            visibility: hidden;
+        }
+
+        .form-field.success small {
+            color: #2ecc71;
+            visibility: visible;
+        }
+
+        .form-field.error small {
+            border-color: #e74c3c;
+            color: #e74c3c;
+            visibility: visible;
         }
 
         .form-field.success input {
-            border-color: green;
+            border-color: #2ecc71;
         }
 
-        .form-field small {
-            color: red;
+        .form-field.error input {
+            border-color: #e74c3c;
         }
+
 
         #table-item {
             grid-column-start: 3;
@@ -150,7 +170,7 @@
             justify-content: center;
             align-items: normal;
             font-size: 0.4em;
-            overflow-y:scroll;
+            overflow-y: scroll;
         }
 
         td {
@@ -202,8 +222,7 @@
 <div class="container">
     <div class="header-item" id="header-item">Arzmonstr's lair</div>
     <div class="graph-item">
-        <svg width="700" height="700"
-             viewBox="0 0 360 300">
+        <svg viewBox="0 0 360 300">
             <!--Координатные оси-->
             <line x1="0" x2="300" y1="150" y2="150"></line>
             <line x1="150" x2="150" y1="0" y2="300"></line>
@@ -242,8 +261,9 @@
         </svg>
     </div>
     <div class="form-item" id="form-item">
-        <form action="" method="post" id="form" onclick="validate_form()">
+        <form action="" method="get" id="form">
         <fieldset>
+            <br>
             <legend class="form_name">Select (x, y) and R</legend>
             <div class="form-field">
                 <span>Choose X:</span>
@@ -255,20 +275,20 @@
                 <input type="checkbox" class="custom-checkbox" id="x6" name="x[]" value="0.5"><label for="x6">0.5</label>
                 <input type="checkbox" class="custom-checkbox" id="x7" name="x[]" value="1"><label for="x7">1</label>
                 <input type="checkbox" class="custom-checkbox" id="x8" name="x[]" value="1.5"><label for="x8">1.5</label>
-                <input type="checkbox" class="custom-checkbox" id="x9" name="x[]" value="2"><label for="x9">2</label>
-                <small></small>
+                <input type="checkbox" class="custom-checkbox" id="x9" name="x[]" value="2"><label for="x9">2</label><br>
+                <small>Error message</small>
             </div>
             <br>
             <div class="form-field">
                 <span>Enter Y:</span>
-                <label for="y"></label><input type="text" name="y" id="y">
-                <small></small>
+                <label for="y"></label><input type="text" name="y" id="y" placeholder="(-3..5)"><br>
+                <small>Error message</small>
             </div>
             <br>
             <div class="form-field">
                 <span>Enter R:</span>
-                <label for="r"></label><input type="text" name="r" id="r">
-                <small></small>
+                <label for="r"></label><input type="text" name="r" id="r" placeholder="(1..4)"><br>
+                <small>Error message</small>
             </div>
             <div>
                 <input type="submit" id="submit" value="Submit">
@@ -421,7 +441,7 @@
         </table>
     </div>
     <div class="footer-item">
-        <p>Author: Giniyatullin Arslan</p>
+        <p onclick="myLink()">Author: Giniyatullin Arslan</p>
         <p>Group: P32121</p>
         <p>© 1993-2022 ITMO University</p>
     </div>
