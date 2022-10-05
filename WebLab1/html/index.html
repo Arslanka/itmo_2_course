@@ -134,7 +134,7 @@
         }
 
         input[placeholder] {
-           padding-left: 0.4em;
+            padding-left: 0.4em;
         }
 
         .form-field  small {
@@ -173,7 +173,7 @@
             overflow-y: scroll;
         }
 
-        td {
+        tr {
             padding: 0.1em;
             border-radius: 0.5em;
         }
@@ -184,23 +184,36 @@
             border-radius: 0.4em;
         }
 
-        #result_table th:nth-child(even):hover {
-            background: #a0a5a8;
-        }
-
-        #result_table th:nth-child(odd):hover {
-            background: #FBE0C3;
-        }
-
-        #result_table {
-            border-collapse: collapse;
+        td {
+            border: 0.2em #a0a5a8 solid;
+            padding: 0.4em;
+            border-radius: 0.4em;
         }
 
         #result_table tr td,
         #result_table tr th {
-            padding: 0.7em;
-            background: #FFBB98;
+            padding: 8px;
+            text-align: left;
         }
+
+        #result_table thead {
+            background-color: #ffd180;
+        }
+
+        #result_table tbody tr:nth-child(odd) {
+            background-color: #FFBB98;
+        }
+
+        #result_table tbody tr:nth-child(even) {
+            background-color: #FBE0C3;
+        }
+
+        #result_table thead tr:hover,
+        #result_table tbody tr:hover {
+            background-color: #ffd180;
+            cursor: pointer;
+        }
+
 
         .footer-item {
             grid-column-start: 1;
@@ -261,44 +274,52 @@
         </svg>
     </div>
     <div class="form-item" id="form-item">
-        <form action="" method="get" id="form">
-        <fieldset>
-            <br>
-            <legend class="form_name">Select (x, y) and R</legend>
-            <div class="form-field">
-                <span>Choose X:</span>
-                <input type="checkbox" class="custom-checkbox" id="x1" name="x[]" value="-2"><label for="x1">-2</label>
-                <input type="checkbox" class="custom-checkbox" id="x2" name="x[]" value="-1.5"><label for="x2">-1.5</label>
-                <input type="checkbox" class="custom-checkbox" id="x3" name="x[]" value="-1"><label for="x3">-1</label><br>
-                <input type="checkbox" class="custom-checkbox" id="x4" name="x[]" value="-0.5"><label for="x4">-0.5</label>
-                <input type="checkbox" class="custom-checkbox" id="x5" name="x[]" value="0"><label for="x5">0</label>
-                <input type="checkbox" class="custom-checkbox" id="x6" name="x[]" value="0.5"><label for="x6">0.5</label>
-                <input type="checkbox" class="custom-checkbox" id="x7" name="x[]" value="1"><label for="x7">1</label>
-                <input type="checkbox" class="custom-checkbox" id="x8" name="x[]" value="1.5"><label for="x8">1.5</label>
-                <input type="checkbox" class="custom-checkbox" id="x9" name="x[]" value="2"><label for="x9">2</label><br>
-                <small>Error message</small>
-            </div>
-            <br>
-            <div class="form-field">
-                <span>Enter Y:</span>
-                <label for="y"></label><input type="text" name="y" id="y" placeholder="(-3..5)"><br>
-                <small>Error message</small>
-            </div>
-            <br>
-            <div class="form-field">
-                <span>Enter R:</span>
-                <label for="r"></label><input type="text" name="r" id="r" placeholder="(1..4)"><br>
-                <small>Error message</small>
-            </div>
-            <div>
-                <input type="submit" id="submit" value="Submit">
-                <input type="submit" id="clear" value="Clear table">
-            </div>
-        </fieldset>
+        <form action="" method="post" id="form" onsubmit="return false">
+            <fieldset>
+                <br>
+                <legend class="form_name">Select (x, y) and R</legend>
+                <div class="form-field">
+                    <span>Choose X:</span>
+                    <input type="checkbox" class="custom-checkbox" id="x1" name="x[]" value="-2"><label for="x1">-2</label>
+                    <input type="checkbox" class="custom-checkbox" id="x2" name="x[]" value="-1.5"><label for="x2">-1.5</label>
+                    <input type="checkbox" class="custom-checkbox" id="x3" name="x[]" value="-1"><label for="x3">-1</label><br>
+                    <input type="checkbox" class="custom-checkbox" id="x4" name="x[]" value="-0.5"><label for="x4">-0.5</label>
+                    <input type="checkbox" class="custom-checkbox" id="x5" name="x[]" value="0"><label for="x5">0</label>
+                    <input type="checkbox" class="custom-checkbox" id="x6" name="x[]" value="0.5"><label for="x6">0.5</label>
+                    <input type="checkbox" class="custom-checkbox" id="x7" name="x[]" value="1"><label for="x7">1</label>
+                    <input type="checkbox" class="custom-checkbox" id="x8" name="x[]" value="1.5"><label for="x8">1.5</label>
+                    <input type="checkbox" class="custom-checkbox" id="x9" name="x[]" value="2"><label for="x9">2</label><br>
+                    <small>Error message</small>
+                </div>
+                <br>
+                <div class="form-field">
+                    <span>Enter Y:</span>
+                    <label for="y"></label><input type="text" name="y" id="y" placeholder="(-3..5)"><br>
+                    <small>Error message</small>
+                </div>
+                <br>
+                <div class="form-field">
+                    <span>Enter R:</span>
+                    <label for="r"></label><input type="text" name="r" id="r" placeholder="(1..4)"><br>
+                    <small>Error message</small>
+                </div>
+                <div>
+                    <input type="submit" id="submit" value="Submit">
+                    <input type="submit" id="clear" value="Clear table">
+                </div>
+            </fieldset>
         </form>
     </div>
     <div class="table-item" id="table-item">
         <table id="result_table">
+            <thead>
+            <th>X </th>
+            <th>Y </th>
+            <th>R </th>
+            <th>Hit </th>
+            <th>Local time </th>
+            <th>Script time</th>
+            </thead>
             <tr>
                 <th>X </th>
                 <th>Y </th>
@@ -307,141 +328,10 @@
                 <th>Local time </th>
                 <th>Script time</th>
             </tr>
-            <tr>
-                <th>1 </th>
-                <th>2 </th>
-                <th>3 </th>
-                <th>Hit </th>
-                <th>Local time </th>
-                <th>Script time</th>
-            </tr>
-            <tr>
-                <th>X </th>
-                <th>Y </th>
-                <th>R </th>
-                <th>Hit </th>
-                <th>Local time </th>
-                <th>Script time</th>
-            </tr>
-            <tr>
-                <th>X </th>
-                <th>Y </th>
-                <th>R </th>
-                <th>Hit </th>
-                <th>Local time </th>
-                <th>Script time</th>
-            </tr><tr>
-                <th>X </th>
-                <th>Y </th>
-                <th>R </th>
-                <th>Hit </th>
-                <th>Local time </th>
-                <th>Script time</th>
-            </tr>
-            <tr>
-                <th>X </th>
-                <th>Y </th>
-                <th>R </th>
-                <th>Hit </th>
-                <th>Local time </th>
-                <th>Script time</th>
-            </tr><tr>
-                <th>X </th>
-                <th>Y </th>
-                <th>R </th>
-                <th>Hit </th>
-                <th>Local time </th>
-                <th>Script time</th>
-            </tr><tr>
-                <th>X </th>
-                <th>Y </th>
-                <th>R </th>
-                <th>Hit </th>
-                <th>Local time </th>
-                <th>Script time</th>
-            </tr><tr>
-                <th>X </th>
-                <th>Y </th>
-                <th>R </th>
-                <th>Hit </th>
-                <th>Local time </th>
-                <th>Script time</th>
-            </tr>
-            <tr>
-                <th>X </th>
-                <th>Y </th>
-                <th>R </th>
-                <th>Hit </th>
-                <th>Local time </th>
-                <th>Script time</th>
-            </tr><tr>
-            <th>X </th>
-            <th>Y </th>
-            <th>R </th>
-            <th>Hit </th>
-            <th>Local time </th>
-            <th>Script time</th>
-        </tr><tr>
-            <th>X </th>
-            <th>Y </th>
-            <th>R </th>
-            <th>Hit </th>
-            <th>Local time </th>
-            <th>Script time</th>
-        </tr><tr>
-            <th>X </th>
-            <th>Y </th>
-            <th>R </th>
-            <th>Hit </th>
-            <th>Local time </th>
-            <th>Script time</th>
-        </tr><tr>
-            <th>X </th>
-            <th>Y </th>
-            <th>R </th>
-            <th>Hit </th>
-            <th>Local time </th>
-            <th>Script time</th>
-        </tr><tr>
-            <th>X </th>
-            <th>Y </th>
-            <th>R </th>
-            <th>Hit </th>
-            <th>Local time </th>
-            <th>Script time</th>
-        </tr><tr>
-            <th>X </th>
-            <th>Y </th>
-            <th>R </th>
-            <th>Hit </th>
-            <th>Local time </th>
-            <th>Script time</th>
-        </tr><tr>
-            <th>X </th>
-            <th>Y </th>
-            <th>R </th>
-            <th>Hit </th>
-            <th>Local time </th>
-            <th>Script time</th>
-        </tr><tr>
-            <th>X </th>
-            <th>Y </th>
-            <th>R </th>
-            <th>Hit </th>
-            <th>Local time </th>
-            <th>Script time</th>
-        </tr><tr>
-            <th>X </th>
-            <th>Y </th>
-            <th>R </th>
-            <th>Hit </th>
-            <th>Local time </th>
-            <th>Script 12301203</th>
-        </tr>
         </table>
     </div>
     <div class="footer-item">
-        <p onclick="myLink()">Author: Giniyatullin Arslan</p>
+        <p onclick="openLink()">Author: Giniyatullin Arslan</p>
         <p>Group: P32121</p>
         <p>© 1993-2022 ITMO University</p>
     </div>

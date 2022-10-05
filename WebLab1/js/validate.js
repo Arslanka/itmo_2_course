@@ -10,8 +10,10 @@ function checkX() {
 function checkY() {
     const yEl = document.getElementById("y");
     const yVal = yEl.value
-    if (isNaN(parseFloat(yVal)) || yVal === "") {
+    if (isNaN(yVal) || yVal === "") {
         return setErrorFor(yEl, "Please, input number");
+    } else if (yVal.length > 5) {
+        return setErrorFor(yEl, "Please, enter a number with no more than 5 digits");
     } else if (parseFloat(yVal) < -3 || parseFloat(yVal) > 5) {
         return setErrorFor(yEl, "Please, input number in specified range");
     } else {
@@ -20,15 +22,17 @@ function checkY() {
 }
 
 function checkR() {
-    const r = document.getElementById("r")
-    const rVal = r.value
+    const rEl = document.getElementById("r")
+    const rVal = rEl.value
 
-    if (isNaN(parseFloat(rVal)) || rVal === "") {
-        return setErrorFor(r, "Please, input number");
+    if (isNaN(rVal) || rVal === "") {
+        return setErrorFor(rEl, "Please, input number");
+    } else if (rVal.length > 5) {
+        return setErrorFor(rEl, "Please, enter a number with no more than 5 digits");
     } else if (parseFloat(rVal) < 1 || parseFloat(rVal) > 4) {
-        return setErrorFor(r, "Please, input number in specified range");
+        return setErrorFor(rEl, "Please, input number in specified range");
     } else {
-        return setSuccessFor(r);
+        return setSuccessFor(rEl);
     }
 }
 
