@@ -8,7 +8,9 @@ ITMO University, Russia.
 ## Structure
 ```
 .
-|-- web-basics // Web Technologies, 3rd term
+|-- web-basics
+            -> WebLab1
+            -> WebLab2
 |-- asm
     |-- soon  
 ```
