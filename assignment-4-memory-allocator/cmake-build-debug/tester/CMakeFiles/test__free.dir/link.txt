@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/cc -std=c17 -ggdb -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/test__free.dir/tests/_free.c.o CMakeFiles/test_stubs.dir/src/test_utils.c.o  -o test__free  ../src/libmemalloc.a 

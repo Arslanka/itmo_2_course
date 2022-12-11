@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/solution/src/main.c
+stdio.h
+-
+stdlib.h
+-
+

@@ -1,0 +1,99 @@
+Start testing: Dec 05 16:15 MSK
+----------------------------------------------------------
+1/3 Testing: test-1
+1/3 Test: test-1
+Command: "/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake" "-DTEST_DIR=/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/tester/tests/1" "-DIMAGE_TRANSFORMER=/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/cmake-build-debug/solution/image-transformer" "-DIMAGE_MATCHER=/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/cmake-build-debug/tester/image-matcher" "-P" "/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/tester/tester.cmake"
+Directory: /Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/cmake-build-debug/tester
+"test-1" start time: Dec 05 16:15 MSK
+Output:
+----------------------------------------------------------
+CMake Error at /Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/tester/tester.cmake:20 (message):
+  
+
+  Error running "image-transformer"
+
+  *** Output: ***
+
+  <empty>
+
+  *** Error: ***
+
+  <empty>
+
+Call Stack (most recent call first):
+  /Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/tester/tester.cmake:24 (exec_check)
+
+
+<end of output>
+Test time =   0.20 sec
+----------------------------------------------------------
+Test Failed.
+"test-1" end time: Dec 05 16:15 MSK
+"test-1" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/3 Testing: test-2
+2/3 Test: test-2
+Command: "/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake" "-DTEST_DIR=/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/tester/tests/2" "-DIMAGE_TRANSFORMER=/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/cmake-build-debug/solution/image-transformer" "-DIMAGE_MATCHER=/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/cmake-build-debug/tester/image-matcher" "-P" "/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/tester/tester.cmake"
+Directory: /Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/cmake-build-debug/tester
+"test-2" start time: Dec 05 16:15 MSK
+Output:
+----------------------------------------------------------
+CMake Error at /Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/tester/tester.cmake:20 (message):
+  
+
+  Error running "image-transformer"
+
+  *** Output: ***
+
+  <empty>
+
+  *** Error: ***
+
+  <empty>
+
+Call Stack (most recent call first):
+  /Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/tester/tester.cmake:24 (exec_check)
+
+
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Failed.
+"test-2" end time: Dec 05 16:15 MSK
+"test-2" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/3 Testing: test-3
+3/3 Test: test-3
+Command: "/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake" "-DTEST_DIR=/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/tester/tests/3" "-DIMAGE_TRANSFORMER=/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/cmake-build-debug/solution/image-transformer" "-DIMAGE_MATCHER=/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/cmake-build-debug/tester/image-matcher" "-P" "/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/tester/tester.cmake"
+Directory: /Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/cmake-build-debug/tester
+"test-3" start time: Dec 05 16:15 MSK
+Output:
+----------------------------------------------------------
+CMake Error at /Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/tester/tester.cmake:20 (message):
+  
+
+  Error running "image-transformer"
+
+  *** Output: ***
+
+  <empty>
+
+  *** Error: ***
+
+  <empty>
+
+Call Stack (most recent call first):
+  /Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/tester/tester.cmake:24 (exec_check)
+
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Failed.
+"test-3" end time: Dec 05 16:15 MSK
+"test-3" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Dec 05 16:15 MSK

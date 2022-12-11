@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-4-memory-allocator/src/main.c
+mem.h
+/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-4-memory-allocator/src/mem.h
+malloc_tests.h
+/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-4-memory-allocator/src/malloc_tests.h
+
+/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-4-memory-allocator/src/malloc_tests.h
+stdbool.h
+-
+
+/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-4-memory-allocator/src/mem.h
+stdbool.h
+-
+stdint.h
+-
+stdio.h
+-
+sys/mman.h
+-
+

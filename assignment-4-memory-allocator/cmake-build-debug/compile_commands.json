@@ -1,0 +1,82 @@
+[
+{
+  "directory": "/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-4-memory-allocator/cmake-build-debug/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DDEBUG -I/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-4-memory-allocator/src/.  -std=c17 -ggdb -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.1   -Wall -Werror -Wno-unused -ggdb -o CMakeFiles/memalloc_exe.dir/main.c.o   -c /Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-4-memory-allocator/src/main.c",
+  "file": "/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-4-memory-allocator/src/main.c"
+},
+{
+  "directory": "/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-4-memory-allocator/cmake-build-debug/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DDEBUG -I/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-4-memory-allocator/src/.  -std=c17 -ggdb -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.1   -Wall -Werror -Wno-unused -ggdb -o CMakeFiles/memalloc.dir/malloc_tests.c.o   -c /Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-4-memory-allocator/src/malloc_tests.c",
+  "file": "/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-4-memory-allocator/src/malloc_tests.c"
+},
+{
+  "directory": "/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-4-memory-allocator/cmake-build-debug/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DDEBUG -I/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-4-memory-allocator/src/.  -std=c17 -ggdb -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.1   -Wall -Werror -Wno-unused -ggdb -o CMakeFiles/memalloc.dir/mem.c.o   -c /Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-4-memory-allocator/src/mem.c",
+  "file": "/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-4-memory-allocator/src/mem.c"
+},
+{
+  "directory": "/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-4-memory-allocator/cmake-build-debug/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DDEBUG -I/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-4-memory-allocator/src/.  -std=c17 -ggdb -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.1   -Wall -Werror -Wno-unused -ggdb -o CMakeFiles/memalloc.dir/mem_debug.c.o   -c /Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-4-memory-allocator/src/mem_debug.c",
+  "file": "/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-4-memory-allocator/src/mem_debug.c"
+},
+{
+  "directory": "/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-4-memory-allocator/cmake-build-debug/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DDEBUG -I/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-4-memory-allocator/src/.  -std=c17 -ggdb -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.1   -Wall -Werror -Wno-unused -ggdb -o CMakeFiles/memalloc.dir/util.c.o   -c /Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-4-memory-allocator/src/util.c",
+  "file": "/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-4-memory-allocator/src/util.c"
+},
+{
+  "directory": "/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-4-memory-allocator/cmake-build-debug/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DDEBUG -I/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-4-memory-allocator/src/.  -std=c17 -ggdb -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.1   -Wall -Werror -Wno-unused -ggdb -o CMakeFiles/memalloc.dir/main.c.o   -c /Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-4-memory-allocator/src/main.c",
+  "file": "/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-4-memory-allocator/src/main.c"
+},
+{
+  "directory": "/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-4-memory-allocator/cmake-build-debug/tester",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DDEBUG -I/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-4-memory-allocator/tester/src -I/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-4-memory-allocator/src/.  -std=c17 -ggdb -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.1   -o CMakeFiles/test_try_merge_with_next.dir/tests/try_merge_with_next.c.o   -c /Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-4-memory-allocator/tester/tests/try_merge_with_next.c",
+  "file": "/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-4-memory-allocator/tester/tests/try_merge_with_next.c"
+},
+{
+  "directory": "/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-4-memory-allocator/cmake-build-debug/tester",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DDEBUG -I/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-4-memory-allocator/tester/src -I/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-4-memory-allocator/src/.  -std=c17 -ggdb -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.1   -o CMakeFiles/test_split_if_too_big.dir/tests/split_if_too_big.c.o   -c /Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-4-memory-allocator/tester/tests/split_if_too_big.c",
+  "file": "/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-4-memory-allocator/tester/tests/split_if_too_big.c"
+},
+{
+  "directory": "/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-4-memory-allocator/cmake-build-debug/tester",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DDEBUG -I/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-4-memory-allocator/tester/src -I/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-4-memory-allocator/src/.  -std=c17 -ggdb -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.1   -o CMakeFiles/test_try_memalloc_existing.dir/tests/try_memalloc_existing.c.o   -c /Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-4-memory-allocator/tester/tests/try_memalloc_existing.c",
+  "file": "/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-4-memory-allocator/tester/tests/try_memalloc_existing.c"
+},
+{
+  "directory": "/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-4-memory-allocator/cmake-build-debug/tester",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DDEBUG -I/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-4-memory-allocator/tester/src -I/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-4-memory-allocator/src/.  -std=c17 -ggdb -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.1   -o CMakeFiles/test_grow_heap.dir/tests/grow_heap.c.o   -c /Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-4-memory-allocator/tester/tests/grow_heap.c",
+  "file": "/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-4-memory-allocator/tester/tests/grow_heap.c"
+},
+{
+  "directory": "/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-4-memory-allocator/cmake-build-debug/tester",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DDEBUG -I/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-4-memory-allocator/tester/src -I/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-4-memory-allocator/src/.  -std=c17 -ggdb -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.1   -o CMakeFiles/test_memalloc.dir/tests/memalloc.c.o   -c /Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-4-memory-allocator/tester/tests/memalloc.c",
+  "file": "/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-4-memory-allocator/tester/tests/memalloc.c"
+},
+{
+  "directory": "/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-4-memory-allocator/cmake-build-debug/tester",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DDEBUG -I/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-4-memory-allocator/tester/src -I/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-4-memory-allocator/src/.  -std=c17 -ggdb -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.1   -o CMakeFiles/test_heap_init.dir/tests/heap_init.c.o   -c /Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-4-memory-allocator/tester/tests/heap_init.c",
+  "file": "/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-4-memory-allocator/tester/tests/heap_init.c"
+},
+{
+  "directory": "/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-4-memory-allocator/cmake-build-debug/tester",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DDEBUG -I/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-4-memory-allocator/tester/src -I/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-4-memory-allocator/src/.  -std=c17 -ggdb -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.1   -o CMakeFiles/test_alloc_region.dir/tests/alloc_region.c.o   -c /Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-4-memory-allocator/tester/tests/alloc_region.c",
+  "file": "/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-4-memory-allocator/tester/tests/alloc_region.c"
+},
+{
+  "directory": "/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-4-memory-allocator/cmake-build-debug/tester",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DDEBUG -I/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-4-memory-allocator/tester/src -I/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-4-memory-allocator/src/.  -std=c17 -ggdb -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.1   -o CMakeFiles/test_find_good_or_last.dir/tests/find_good_or_last.c.o   -c /Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-4-memory-allocator/tester/tests/find_good_or_last.c",
+  "file": "/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-4-memory-allocator/tester/tests/find_good_or_last.c"
+},
+{
+  "directory": "/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-4-memory-allocator/cmake-build-debug/tester",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DDEBUG -I/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-4-memory-allocator/tester/src -I/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-4-memory-allocator/src/.  -std=c17 -ggdb -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.1   -o CMakeFiles/test__free.dir/tests/_free.c.o   -c /Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-4-memory-allocator/tester/tests/_free.c",
+  "file": "/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-4-memory-allocator/tester/tests/_free.c"
+},
+{
+  "directory": "/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-4-memory-allocator/cmake-build-debug/tester",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DDEBUG -I/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-4-memory-allocator/tester/src -I/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-4-memory-allocator/src/.  -std=c17 -ggdb -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.1   -o CMakeFiles/test_stubs.dir/src/test_utils.c.o   -c /Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-4-memory-allocator/tester/src/test_utils.c",
+  "file": "/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-4-memory-allocator/tester/src/test_utils.c"
+}
+]

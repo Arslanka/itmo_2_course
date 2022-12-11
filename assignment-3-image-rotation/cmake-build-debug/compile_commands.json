@@ -1,0 +1,67 @@
+[
+{
+  "directory": "/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/cmake-build-debug/solution",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/solution/src -I/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/solution/include  -std=c17 -pedantic -Wall -Werror -ggdb -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.1   -o CMakeFiles/image-transformer.dir/src/io/bmp_header.c.o   -c /Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/solution/src/io/bmp_header.c",
+  "file": "/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/solution/src/io/bmp_header.c"
+},
+{
+  "directory": "/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/cmake-build-debug/solution",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/solution/src -I/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/solution/include  -std=c17 -pedantic -Wall -Werror -ggdb -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.1   -o CMakeFiles/image-transformer.dir/src/io/bmp_io.c.o   -c /Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/solution/src/io/bmp_io.c",
+  "file": "/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/solution/src/io/bmp_io.c"
+},
+{
+  "directory": "/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/cmake-build-debug/solution",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/solution/src -I/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/solution/include  -std=c17 -pedantic -Wall -Werror -ggdb -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.1   -o CMakeFiles/image-transformer.dir/src/io/file_io.c.o   -c /Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/solution/src/io/file_io.c",
+  "file": "/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/solution/src/io/file_io.c"
+},
+{
+  "directory": "/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/cmake-build-debug/solution",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/solution/src -I/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/solution/include  -std=c17 -pedantic -Wall -Werror -ggdb -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.1   -o CMakeFiles/image-transformer.dir/src/io/image.c.o   -c /Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/solution/src/io/image.c",
+  "file": "/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/solution/src/io/image.c"
+},
+{
+  "directory": "/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/cmake-build-debug/solution",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/solution/src -I/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/solution/include  -std=c17 -pedantic -Wall -Werror -ggdb -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.1   -o CMakeFiles/image-transformer.dir/src/io/printer.c.o   -c /Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/solution/src/io/printer.c",
+  "file": "/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/solution/src/io/printer.c"
+},
+{
+  "directory": "/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/cmake-build-debug/solution",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/solution/src -I/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/solution/include  -std=c17 -pedantic -Wall -Werror -ggdb -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.1   -o CMakeFiles/image-transformer.dir/src/main.c.o   -c /Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/solution/src/main.c",
+  "file": "/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/solution/src/main.c"
+},
+{
+  "directory": "/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/cmake-build-debug/solution",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/solution/src -I/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/solution/include  -std=c17 -pedantic -Wall -Werror -ggdb -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.1   -o CMakeFiles/image-transformer.dir/src/utils/bmp_padding.c.o   -c /Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/solution/src/utils/bmp_padding.c",
+  "file": "/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/solution/src/utils/bmp_padding.c"
+},
+{
+  "directory": "/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/cmake-build-debug/solution",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/solution/src -I/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/solution/include  -std=c17 -pedantic -Wall -Werror -ggdb -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.1   -o CMakeFiles/image-transformer.dir/src/utils/status_codes_mapping.c.o   -c /Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/solution/src/utils/status_codes_mapping.c",
+  "file": "/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/solution/src/utils/status_codes_mapping.c"
+},
+{
+  "directory": "/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/cmake-build-debug/solution",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/solution/src -I/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/solution/include  -std=c17 -pedantic -Wall -Werror -ggdb -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.1   -o CMakeFiles/image-transformer.dir/src/utils/transform.c.o   -c /Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/solution/src/utils/transform.c",
+  "file": "/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/solution/src/utils/transform.c"
+},
+{
+  "directory": "/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/cmake-build-debug/tester",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/tester/src -I/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/tester/include  -std=c17 -pedantic -Wall -Werror -ggdb -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.1   -o CMakeFiles/image-matcher.dir/src/bmp.c.o   -c /Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/tester/src/bmp.c",
+  "file": "/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/tester/src/bmp.c"
+},
+{
+  "directory": "/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/cmake-build-debug/tester",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/tester/src -I/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/tester/include  -std=c17 -pedantic -Wall -Werror -ggdb -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.1   -o CMakeFiles/image-matcher.dir/src/file_cmp.c.o   -c /Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/tester/src/file_cmp.c",
+  "file": "/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/tester/src/file_cmp.c"
+},
+{
+  "directory": "/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/cmake-build-debug/tester",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/tester/src -I/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/tester/include  -std=c17 -pedantic -Wall -Werror -ggdb -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.1   -o CMakeFiles/image-matcher.dir/src/main.c.o   -c /Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/tester/src/main.c",
+  "file": "/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/tester/src/main.c"
+},
+{
+  "directory": "/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/cmake-build-debug/tester",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/tester/src -I/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/tester/include  -std=c17 -pedantic -Wall -Werror -ggdb -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.1   -o CMakeFiles/image-matcher.dir/src/util.c.o   -c /Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/tester/src/util.c",
+  "file": "/Users/arslanginiatullin/Desktop/itmo2course/asm/assignment-3-image-rotation/tester/src/util.c"
+}
+]
