@@ -7,10 +7,4 @@ CREATE TABLE IF NOT EXISTS s335089.request
     r            DOUBLE PRECISION         NOT NULL,
     request_time TIMESTAMP WITH TIME ZONE NOT NULL,
     status       BOOLEAN                  NOT NULL
-);
-
-CREATE TABLE IF NOT EXISTS s335089.user
-(
-    id         BIGINT PRIMARY KEY,
-    session_id VARCHAR(256) NOT NULL
 )

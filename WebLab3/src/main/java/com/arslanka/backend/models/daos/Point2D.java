@@ -1,4 +1,4 @@
-package com.arslanka.backend.models;
+package com.arslanka.backend.models.daos;
 
 import jakarta.enterprise.context.RequestScoped;
 import jakarta.inject.Named;
