@@ -41,3 +41,5 @@ mvnw
 mvnw.cmd
 .mvn
 .idea
+node_modules
+package-lock.json
