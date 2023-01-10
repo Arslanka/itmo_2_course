@@ -1,5 +1,6 @@
 package com.arslanka.backend.db.repositories;
 
+import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.Collection;
 import java.util.List;
@@ -8,7 +9,9 @@ import com.arslanka.backend.models.daos.Point2D;
 import com.arslanka.backend.models.daos.Request;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Named;
+import org.jooq.DSLContext;
 import org.jooq.exception.DataAccessException;
+import org.jooq.impl.DSL;
 import org.jooq.sources.tables.records.RequestRecord;
 
 import static org.jooq.sources.Tables.REQUEST;
@@ -42,6 +45,19 @@ public class RequestRepository extends SimpleRepository {
 
     public void clear() throws SQLException {
         withConnection(db -> db.dropTable(REQUEST), DB_TYPE_POSTGRESQL);
+    }
+
+    public void deleteAllByIds(List<Long> ids) throws SQLException {
+        try (Connection connection = dataSource().getConnection()) {
+
+            DSLContext dslContext = DSL.using(connection, DB_TYPE_POSTGRESQL);
+
+            dslContext.delete(REQUEST)
+                    .where(REQUEST.ID.in(ids))
+                    .execute();
+        } catch (SQLException sqlException) {
+            sqlException.printStackTrace();
+        }
     }
 
     private Request toRequest(RequestRecord record) {

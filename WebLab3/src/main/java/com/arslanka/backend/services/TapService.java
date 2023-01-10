@@ -24,6 +24,10 @@ public class TapService {
         logger.info(String.format("%s %d %s", "Tap with id:", tap.getId(), "was saved"));
     }
 
+    public void deleteBySessionId(String sessionId) throws SQLException {
+        tapRepository.deleteBySessionId(sessionId);
+    }
+
     public List<Tap> findAllTaps() throws SQLException {
         List<Tap> taps = tapRepository.findAllTaps().stream().toList();
         logger.info(String.format("%d %s", taps.size(), "types were found"));
@@ -35,4 +39,5 @@ public class TapService {
         logger.info(String.format("%d %s", ids.size(), "ids with current sessionId were found"));
         return ids;
     }
+
 }

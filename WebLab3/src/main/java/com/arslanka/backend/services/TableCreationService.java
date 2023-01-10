@@ -1,6 +1,7 @@
 package com.arslanka.backend.services;
 
 import java.sql.SQLException;
+import java.util.Collections;
 import java.util.List;
 
 import com.arslanka.backend.models.daos.Request;
@@ -23,9 +24,12 @@ public class TableCreationService {
         List<Request> requestList = requestService.findRequestsBySessionId(tap.getSessionId());
         if (!requestList.isEmpty()) {
             setTableRow(requestList.get(requestList.size() - 1));
+            return requestList.stream().map(Request::toTableRow).toList();
+        } else {
+            return Collections.emptyList();
         }
-        return requestList.stream().map(Request::toTableRow).toList();
     }
+
 
     private void setTableRow(Request request) {
         tableRow.setId(request.getId());

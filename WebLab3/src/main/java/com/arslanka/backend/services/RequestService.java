@@ -16,13 +16,13 @@ import org.slf4j.LoggerFactory;
 public class RequestService {
     private static final Logger logger = LoggerFactory.getLogger(RequestService.class);
     @Inject
-    private TapService userService;
+    private TapService tapService;
 
     @Inject
     private RequestRepository requestRepository;
 
     public List<Request> findRequestsBySessionId(String sessionId) throws SQLException {
-        List<Long> ids = userService.findCurrentRequestIds(sessionId);
+        List<Long> ids = tapService.findCurrentRequestIds(sessionId);
         logger.info(String.format("%d %s", ids.size(), "requests were found by current sessionId"));
         return requestRepository.findAllByIds(ids).stream().toList();
     }
@@ -34,6 +34,11 @@ public class RequestService {
     public void saveRequest(Request request) throws SQLException {
         requestRepository.upsert(request);
         logger.info(String.format("%s %d %s", "Request with id:", request.getId(), "was saved"));
+    }
+
+    public void deleteBySessionId(String sessionId) throws SQLException {
+        List<Long> ids = tapService.findCurrentRequestIds(sessionId);
+        requestRepository.deleteAllByIds(ids);
     }
 
 }

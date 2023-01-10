@@ -26,6 +26,7 @@ public class TapRepository extends SimpleRepository {
         return withConnection(db -> db.selectFrom(TAP).fetch(this::toTapRecord),
                 DB_TYPE_POSTGRESQL);
     }
+
     public Long upsert(Tap tap) throws SQLException {
         TapRecord record = tap.toRecord();
         return withConnection(db ->
@@ -42,6 +43,10 @@ public class TapRepository extends SimpleRepository {
 
     public void clear() throws SQLException {
         withConnection(db -> db.dropTable(TAP), DB_TYPE_POSTGRESQL);
+    }
+
+    public void deleteBySessionId(String sessionId) throws SQLException {
+        withConnection(db -> db.deleteFrom(TAP).where(TAP.SESSION_ID.eq(sessionId)), DB_TYPE_POSTGRESQL);
     }
 
     private Tap toTapRecord(TapRecord record) {

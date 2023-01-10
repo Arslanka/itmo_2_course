@@ -3,11 +3,11 @@ package com.arslanka.backend.controllers;
 import java.sql.SQLException;
 import java.util.List;
 
-import com.arslanka.backend.models.daos.Request;
-import com.arslanka.backend.models.daos.Table;
 import com.arslanka.backend.models.daos.TableRow;
 import com.arslanka.backend.models.daos.Tap;
+import com.arslanka.backend.services.RequestService;
 import com.arslanka.backend.services.TableCreationService;
+import com.arslanka.backend.services.TapService;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
 import jakarta.inject.Named;
@@ -20,11 +20,28 @@ public class TableRequestController {
     private TableCreationService tableCreationService;
 
     @Inject
+    private RequestService requestService;
+
+    @Inject
+    private TapService tapService;
+
+    @Inject
     private Tap tap;
+
 
     public List<TableRow> getTable() throws SQLException {
         try {
             return tableCreationService.getRequestTable(tap);
+        } catch (Exception ex) {
+            ex.printStackTrace();
+            throw ex;
+        }
+    }
+
+    public void clearTable() throws SQLException {
+        try {
+            requestService.deleteBySessionId(tap.getSessionId());
+            tapService.deleteBySessionId(tap.getSessionId());
         } catch (Exception ex) {
             ex.printStackTrace();
             throw ex;
