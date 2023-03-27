@@ -1,0 +1,3 @@
+/Users/arslan-gin/Desktop/itmo2course/Algos & DS/1005-timus-recursion/cmake-build-debug/CMakeFiles/1005_timus_recursion.dir
+/Users/arslan-gin/Desktop/itmo2course/Algos & DS/1005-timus-recursion/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/arslan-gin/Desktop/itmo2course/Algos & DS/1005-timus-recursion/cmake-build-debug/CMakeFiles/rebuild_cache.dir

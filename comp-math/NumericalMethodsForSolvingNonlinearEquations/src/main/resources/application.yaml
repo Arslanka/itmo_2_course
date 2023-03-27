@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: NumericalMethodsForSolvingNonlinearEquations
+server:
+  port: 8909

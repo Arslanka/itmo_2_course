@@ -1,0 +1,3 @@
+/Users/arslan-gin/Desktop/itmo2course/Algos & DS/1005-timus-knapsack/cmake-build-debug/CMakeFiles/1005_timus_knapsack.dir
+/Users/arslan-gin/Desktop/itmo2course/Algos & DS/1005-timus-knapsack/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/arslan-gin/Desktop/itmo2course/Algos & DS/1005-timus-knapsack/cmake-build-debug/CMakeFiles/rebuild_cache.dir

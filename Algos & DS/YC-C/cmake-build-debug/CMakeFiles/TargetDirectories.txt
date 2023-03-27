@@ -1,0 +1,3 @@
+/Users/arslan-gin/Desktop/itmo2course/Algos & DS/YC-C/cmake-build-debug/CMakeFiles/YC_C.dir
+/Users/arslan-gin/Desktop/itmo2course/Algos & DS/YC-C/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/arslan-gin/Desktop/itmo2course/Algos & DS/YC-C/cmake-build-debug/CMakeFiles/rebuild_cache.dir

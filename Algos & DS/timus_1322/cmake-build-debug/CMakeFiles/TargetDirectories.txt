@@ -1,0 +1,3 @@
+/Users/arslan-gin/Desktop/itmo2course/Algos & DS/timus_1322/cmake-build-debug/CMakeFiles/timus_1322.dir
+/Users/arslan-gin/Desktop/itmo2course/Algos & DS/timus_1322/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/arslan-gin/Desktop/itmo2course/Algos & DS/timus_1322/cmake-build-debug/CMakeFiles/rebuild_cache.dir
