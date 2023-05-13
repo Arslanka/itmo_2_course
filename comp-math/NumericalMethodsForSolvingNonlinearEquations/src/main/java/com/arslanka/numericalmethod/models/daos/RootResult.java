@@ -11,7 +11,7 @@ public record RootResult<T extends BigDecimal>(
 ) {
 
     public static <T extends BigDecimal> RootResult<T> of(Integer numberIterations, T root,
-                                                                                   T res) {
+                                                          T res) {
         return new RootResult<>(numberIterations, root, res);
     }
 

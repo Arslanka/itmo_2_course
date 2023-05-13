@@ -3,37 +3,37 @@ package com.arslanka.numericalmethod.services;
 import java.math.BigDecimal;
 import java.math.MathContext;
 
-import com.arslanka.numericalmethod.models.daos.Equation;
+import com.arslanka.numericalmethod.models.daos.Function;
 import com.arslanka.numericalmethod.models.daos.RootResult;
 import com.arslanka.numericalmethod.models.daos.Segment;
-import com.arslanka.numericalmethod.models.daos.SimplePowerEquation;
+import com.arslanka.numericalmethod.models.daos.SimplePowerFunction;
 import com.arslanka.numericalmethod.utils.math.FunctionUtils;
 import org.springframework.stereotype.Service;
 
 @Service
 public class SimpleIterationsMethodService {
 
-    public RootResult<BigDecimal> solveEquation(Equation<BigDecimal> equation,
+    public RootResult<BigDecimal> solveEquation(Function<BigDecimal> function,
                                                 Segment<BigDecimal> segment, BigDecimal eps) {
-        if (FunctionUtils.isFunctionResultInSegment(equation, segment, Segment.of(BigDecimal.valueOf(-1),
+        if (FunctionUtils.isFunctionResultInSegment(function, segment, Segment.of(BigDecimal.valueOf(-1),
                 BigDecimal.valueOf(1)), 1)) {
-            throw new RuntimeException();
+            throw new RuntimeException(); // todo custom exceptions
         }
-        return solve(equation, segment, segment.leftSide(), eps);
+        return solve(function, segment, segment.leftSide(), eps);
     }
 
-    private RootResult<BigDecimal> solve(Equation<BigDecimal> equation, Segment<BigDecimal> segment, BigDecimal val,
+    private RootResult<BigDecimal> solve(Function<BigDecimal> function, Segment<BigDecimal> segment, BigDecimal val,
                                          BigDecimal eps) {
-        var lambda = (BigDecimal.valueOf(-1)).divide(FunctionUtils.functionMaxResultInSegment(equation, segment,
+        var lambda = (BigDecimal.valueOf(-1)).divide(FunctionUtils.functionMaxResultInSegment(function, segment,
                 segment, 1), MathContext.DECIMAL128);
-        equation = equation.multiply(lambda).add(new SimplePowerEquation(1));
+        function = function.multiply(lambda).add(new SimplePowerFunction(1));
         BigDecimal curApproxRes;
         BigDecimal prevApproxRes = val;
         Integer iterations = 0;
         do {
-            curApproxRes = equation.substitute(prevApproxRes);
+            curApproxRes = function.substitute(prevApproxRes);
             if (curApproxRes.subtract(prevApproxRes).compareTo(eps) < 0) {
-                return RootResult.of(iterations, curApproxRes, equation.substitute(curApproxRes));
+                return RootResult.of(iterations, curApproxRes, curApproxRes.subtract(prevApproxRes));
             }
             iterations++;
             prevApproxRes = curApproxRes;
