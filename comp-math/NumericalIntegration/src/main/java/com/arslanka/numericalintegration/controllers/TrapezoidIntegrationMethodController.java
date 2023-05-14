@@ -3,8 +3,8 @@ package com.arslanka.numericalintegration.controllers;
 import com.arslanka.numericalintegration.models.daos.IntegrationLimits;
 import com.arslanka.numericalintegration.models.dtos.IntegrationRequestDto;
 import com.arslanka.numericalintegration.models.dtos.IntegrationResultDto;
+import com.arslanka.numericalintegration.services.TrapezoidIntegrationMethodService;
 import com.arslanka.numericalintegration.utils.FunctionProvider;
-import com.arslanka.numericalintegration.services.RectangleIntegrationMethodService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,31 +14,33 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-@RestController
-@RequestMapping("/rectangle-integration")
-public class RectangleIntegrationMethodController {
 
-    private static final Logger logger = LoggerFactory.getLogger(RectangleIntegrationMethodController.class);
-    private final RectangleIntegrationMethodService rectangleIntegrationMethodService;
+@RestController
+@RequestMapping("/trapezoid-integration")
+public class TrapezoidIntegrationMethodController {
+
+    private static final Logger logger =
+            LoggerFactory.getLogger(TrapezoidIntegrationMethodController.class);
+    private final TrapezoidIntegrationMethodService trapezoidIntegrationMethodService;
 
     @Autowired
-    public RectangleIntegrationMethodController(RectangleIntegrationMethodService rectangleIntegrationMethodService) {
-        this.rectangleIntegrationMethodService = rectangleIntegrationMethodService;
+    public TrapezoidIntegrationMethodController(TrapezoidIntegrationMethodService trapezoidIntegrationMethodService) {
+        this.trapezoidIntegrationMethodService = trapezoidIntegrationMethodService;
     }
 
     @RequestMapping(value = "/solve", method = RequestMethod.POST)
     public ResponseEntity<IntegrationResultDto> solve(@RequestBody IntegrationRequestDto integrationRequestDto) {
         logger.info(integrationRequestDto.toString());
-        var result = rectangleIntegrationMethodService.solve(
+        var result = trapezoidIntegrationMethodService.solve(
                 FunctionProvider.getFunctionByNumber(integrationRequestDto.numberOfFunction()),
                 IntegrationLimits.of(
                         integrationRequestDto.integrationLimitsDto().left(),
                         integrationRequestDto.integrationLimitsDto().right()
                 ),
                 integrationRequestDto.partition(),
-                integrationRequestDto.accuracy(),
-                integrationRequestDto.rectangleMethodModificationDto().toDomain()
+                integrationRequestDto.accuracy()
         );
         return ResponseEntity.ok(IntegrationResultDto.of(result.result(), result.partition()));
     }
 }
+
