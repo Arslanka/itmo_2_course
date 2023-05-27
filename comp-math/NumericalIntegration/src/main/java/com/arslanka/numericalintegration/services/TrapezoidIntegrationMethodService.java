@@ -24,6 +24,9 @@ public class TrapezoidIntegrationMethodService {
         if (accuracy < EPS_MIN_VALUE) {
             throw new ValueIsOutOfBoundException("accuracy", EPS_MIN_VALUE, 1E8);
         }
+        if (partition <= 0) {
+            throw new ValueIsOutOfBoundException("partition", 0., 1E8);
+        }
         double prevRes;
         double curRes = calculateIntegral(function, limits, partition);
         do {
